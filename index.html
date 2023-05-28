@@ -1,14 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="source.js"></script>
 </head>
+
 <body>
-    
+    <div class="backgroundFade" id="fade"></div>
+    <header>
+        <div class="headerContainer">
+            <h1 class="header">library</h1>
+            <button class="logIn">Log In</button>
+        </div>
+    </header>
+    <main>
+        <div class="form formDisplay" id="form">
+            <h3>Add new book</h3>
+            <input type="text" placeholder="Title" id="bookTitle">
+            <input type="text" placeholder="Author" id="bookAuthor">
+            <input type="number" placeholder="Pages" id="bookPages">
+            <div class="readConfirm">
+                <p>Have you read it?</p>
+                <input type="checkbox" id="bookRead">
+            </div>
+            <button class="submitButton" id="submit">Submit</button>
+        </div>
+        <div class="mainContainer">
+            <button class="addBook" id="newBook">+ Add book</button>
+            <div class="library" id="library">
+                
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footerContainer">
+            <p>Built by</p>
+            <a href="https://github.com/accelangel">Erfan</a>
+            <p>|</p>
+            <a href="https://github.com/accelangel/Project-Library">Source</a>
+        </div>
+    </footer>
+    <script src="source.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    .border: 1px solid limegreen;
+}
+
+body {
+    height: 100vh;
+    background-color: #f1f5f9;
+}
+
+header {
+    height: 10%;
+    font-size: calc(1em + 0.5em);
+}
+
+main {
+    min-height: 85%;
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2em;
+    padding-right: calc(60px - 0.5em);
+    height: 100%;
+    background-color: white;
+    gap: 0.25em;
+}
+
+.form {
+    border: none;
+    background-color: #f1f5f9;
+    position: absolute;
+    height: 24em;
+    width: 16em;
+    top: calc(50% - 12em);
+    left: calc(50% - 8em);
+    border-radius: 0.5em;
+    transition: 0.35s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+.form input {
+    width: 100%;
+    border-radius: 5px;
+    height: 3em;
+    padding: 0 0.75em;
+    border: none;
+}
+
+.readConfirm {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    font-size: 1em;
+}
+
+.readConfirm input {
+    width: fit-content;
+}
+
+.submitButton {
+    scale: 150%;
+    border: none;
+    padding: 0.5em 3em;
+    border-radius: 5px;
+    background-color: #86efac;
+}
+
+.formDisplay {
+    opacity: 0;
+    height: 3px;
+    width: 2px;
+    top: 50%;
+    left: 50%;
+}
+
+.backgroundFade {
+    height: 0px;
+    width: 0px;
+    background-color: transparent;
+    position: absolute;
+    pointer-events: none;
+
+}
+
+.fadeDisplay {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.mainContainer {
+    height: 100%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.addBook {
+    padding: 1em;
+    width: fit-content;
+    background-color: #f1f5f9;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.5em;
+    font-size: calc(20px + 0.5em);
+}
+
+.addBook:hover {
+    background-color: rgb(203, 213, 225, 0.75);
+}
+
+.library {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: auto;
+    overflow-y: auto;
+    gap: 2em;
+    padding: 2em;
+}
+
+.library div {
+    min-height: 250px;
+    width: 100%;
+    max-width: 17em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5em;
+    gap: 1em;
+    border-radius: 0.3em;
+    background-color: white;
+    font-weight: bolder;
+    justify-self: center;
+    box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+.removeButton,
+.read,
+.notRead {
+    width: 100%;
+    padding: 1em;
+    border: none;
+    border-radius: 0.25em;
+    background-color: rgb(200, 200, 200);
+}
+
+.removeButton:hover {
+    background-color: rgb(150, 150, 150);
+}
+
+.read {
+    background-color: rgb(144, 238, 144);
+}
+
+.read:hover {
+    background-color: rgb(119, 213, 119);
+}
+
+.notRead {
+    background-color: rgb(240, 128, 128);
+}
+
+.notRead:hover {
+    background-color: rgb(215, 103, 103);
+}
+
+.logIn {
+    border: none;
+    padding: calc(10px + 0.25em);
+    width: calc(75px + 1em);
+    border-radius: 0.5em;
+    background-color: #e2e8f0;
+    font-size: calc(15px + 0.1em);
+}
+
+footer {
+    height: 5%;
+}
+
+.footerContainer {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 0.25em;
+}
+
+.footerContainer a {
+    color: tomato;
+    text-decoration: none;
+}
