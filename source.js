@@ -3,7 +3,8 @@ const form = document.getElementById('form'); // toggling the form
 const fade = document.getElementById('fade'); // ^ toggles the background fade
 const submit = document.getElementById('submit') // submit button in form
 const library = document.getElementById('library') // library div element
-
+const h3 = document.getElementById('h3');
+const p = document.getElementById('p');
 let myLibrary = []; // library array
 
 let bookTitle = document.getElementById('bookTitle');
@@ -19,6 +20,10 @@ submit.addEventListener('click', () => {
     newBook();
     showBook();
     formToggle();
+    bookTitle.value = '';
+    bookAuthor.value = '';
+    bookPages.value = null;
+    bookRead.checked = false;
 });
 
 function Book(title, author, pages, read) { //object constructor
@@ -97,7 +102,11 @@ function readListener(target) {
 function formToggle() {
     form.classList.toggle('formDisplay');
     fade.classList.toggle('fadeDisplay');
-
-
-
+    bookTitle.classList.toggle('formDisplay');
+    bookAuthor.classList.toggle('formDisplay');
+    bookPages.classList.toggle('formDisplay');
+    bookRead.classList.toggle('formDisplay');
+    submit.classList.toggle('formDisplay');
+    h3.classList.toggle('formDisplay');
+    p.classList.toggle('formDisplay');
 }
